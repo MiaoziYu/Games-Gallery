@@ -2,45 +2,63 @@
 <html>
 <head>
 	<title>My Games World</title>
-	<link  href="main.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset_to_default_value.css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 <body>
-	<div class="header">
+	<nav class="header">
 		<ul class="nav">
-			<li>KittenMZ</li>
-			<li class="current"><a href="index.html">Favorite</a></li>
-			<li><a href="game_in_my_dream.html">Others</a></li>
-		</ul>
-	</div>
-	<div class="main-content">
-		<div class="container">
-			<h2>Diablo</h2>
-				<ul>
-					<li><img src="images/diablo_01.jpg" alter="Diablo"></li>
+			<li id="logo">KittenMZ</li>
+			<li class="current">
+				<a href="index.html">Favorite</a>
+			</li>
+			<li>
+			<a href="game_in_my_dream.html">Others</a>
+			</li>
 
-				</ul>
-		</div>
-		<div class="container">
+			<li id="signup">
+				<a href="sign_up.html">Sign up</a>
+			</li>
+			<li id="search">
+				<input type="search" placeholder="search">
+			</li>
+		</ul>
+	</nav>
+
+	<main class="main-content">
+		<section class="container">
+			<h2>Diablo</h2>
+			<ul>
+				<li><img src="images/diablo_01.jpg" alter="Diablo"></li>
+			</ul>
+
+		</section>
+		<section class="container">
 			<h2 title="Heros of Might and Magic">HoM&M</h2>
 			<ul>
-
 				<li><img src="images/heros_01.jpg" alt="Heros of Might and Magic"></li>
 			</ul>
-		</div>
-		<div class="container">
+		</section>
+		<section class="container">
 			<h2>Triple Town</h2>
 				<ul>
 					<li><img src="images/triple_town_04.jpg" alt="Triple Town"></li>
 
 				</ul>
-		</div>
-		<div class="container">
+		</section>
+		<section class="container">
 			<h2>Dungeon Village</h2>
 				<ul>
 					<li><img src="images/dungeon_village_01.jpg" alt="Dungeon Village"></li>
 				</ul>
-		</div>
-	</div>
+		</section>
+	</main>
+
+	<footer>
+
+	</footer>
+
 </body>
 </html>
+
 
