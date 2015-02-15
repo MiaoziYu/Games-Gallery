@@ -6,34 +6,40 @@
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 <body>
-	<nav class="header">
-		<ul class="nav">
-			<li id="logo">
-				<a href="index.html"><img src="images/whitecat.png" alt="KittenMZ"></a>
-			</li>
-			<li>
-				<a href="games.html">Games</a>
-			</li>
-			<li>
-			<a href="movies.html">Movies</a>
-			</li class="current">
-			<li id="signup">
-				<a href="sign_up.html">Sign up</a>
-			</li>
-			<li id="search">
-				<input type="search" placeholder="search">
-			</li>
-		</ul>
-	</nav>
-	<header class="header-main">
+	<div class="banner">
+		<nav class="container-nav">
+			<ul class="logo">
+				<a href="index.html">
+				<p class="logo-text">PADA BEAR</p>
+					<img src="images/whitecat.png" alt="">
+				</a>
+			</ul>
+			<div class="nav-menu">
+			<ul class="nav">
+				<li>
+					<a href="games.html">GAMES</a>
+				</li>
+				<li>
+				<a href="movies.html">MOVIES</a>
+				</li>
+				<li  class="current" id="signup">
+					<a href="sign_up.html">SIGN UP</a>
+				</li>
+
+			</ul>
+			</div>
+		</nav>
+	</div>
+	<header class="header-main" id="signup">
 		<div class="header-title">
 			<p>with our fabulous gallery</p>
 			<h1>Get started!</h1>
 		</div>
 	</header>
 	<main class="main-content">
-		<section class="container-signup">
-			<form action="index.html">
+		<section class="flexbox21">
+			<div class="box clearfix">
+			<form class="signup-form" action="#">
 				<label for="email">E-MAIL ADDRESS</label>
 				<input type="text" id="email" value="@gmail.com" required>
 				<label for="username">USERNAME</label>
@@ -59,22 +65,19 @@
 				<input type="text" id="birthdate" placeholder="date">
 				<input type="submit" value="Submit">
 			</form>
-		</section >
-		<section class="container-signup-aside">
-			<div class="signup-box-up">
-				<div class="signup-box-left">
-
-				</div>
-				<div class="signup-box-right">
-
-				</div>
 			</div>
-			<div class="signup-box-down">
-
+		</section >
+		<section class="flexbox1">
+			<div class="box clearfix">
+			<p>haha</p>
+			</div>
+			<div class="box clearfix">
+			<p>haha</p>
 			</div>
 		</section>
 
 	</main>
+
 
 	<footer>
 
