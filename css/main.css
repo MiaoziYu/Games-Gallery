@@ -1,6 +1,11 @@
+
+/*font family*/
+
 html, body, h1, h2, h3, h4, ul, ol, li, p, a {
 	font-family: Georgia,Helvetica,Tahoma,Sans-serif;
 }
+
+/*background*/
 
 body {
 	background-color: #ECECEC;
@@ -16,85 +21,68 @@ body {
 
 }
 
-/*navigation*/
+/*clear fix*/
+
+.clear-fix:before,
+.clear-fix:after {
+	content:"";
+	display: table;
+}
+
+.clear-fix:after {
+	clear:both;
+}
+
+.clear-fix {
+	zoom: 1;
+}
+
+/*top navigation*/
+
+.logo, .logo li, .nav-menu li {
+	display: inline-block;
+}
+
+.banner, .nav-container, .logo, .logo li, .nav-menu, .nav-menu ul, .nav-menu li {
+	height: 72px;
+}
 
 .banner {
 	background-color: #323232;
-	position: relative;
-	width: 100%;
-	height: 72px;
-	display: block;
-	padding-top: 10px;
-}
-
-.banner:before,
-.banner:after {
-content: "";
-display: table;
-}
-
-.banner:before,
-.banner:after {
-content: "";
-display: table;
 }
 
 .nav-container {
 	max-width: 990px;
-	height: 56px;
 	margin: 0 auto;
 }
 
-.nav-container:before,
-.nav-container:after {
-content: "";
-display: table;
-}
-
-.nav-container:before,
-.nav-container:after {
-content: "";
-display: table;
-}
-
 .logo {
-	display: block;
-	float: left;
 	font-size: 28px;
-	height: 56px;
-	width: 40%;
 }
 
 .logo img {
-	width: 46px;
-	margin: 0px 0 0 10px;
+	height: 46px;
+	margin: auto 0;
 }
 
 .logo p {
+	display: block;
+	height: 46px;
 	font-weight: bold;
-	float: left;
 	font-size: 20px;
-	margin: 5px 0 0 0;
+	margin: auto 5px auto 0;
 	color: #ececec;
 	width: 60px;
 }
 
 .nav-menu {
-	width: auto;
-	height: 56px;
-	margin: auto 0;
 	float: right;
 }
 
-.nav-menu ul {
-	height: 56px;
-}
-
 .nav-menu li {
-	display: inline-block;
 	font-size: 16px;
 	padding: 0px 10px;
-	line-height: 56px;
+	line-height: 72px;
 
 }
 
@@ -110,22 +98,10 @@ display: table;
 	color: #ECECEC;
 }
 
-.logo a {
-	color: #ececec;
-}
 
-/*main*/
+/*main content*/
 
-h1 {
-	font-size: 22px;
-	color: #ffffff;
-}
 
-h2 {
-	padding: 5px 0 5px 16px;
-	margin: 10px 0 5px 0;
-	font-weight: bold;
-}
 
 .main-content {
 	display: -webkit-flex;
@@ -139,36 +115,36 @@ h2 {
 
 /*header*/
 
-.header-main {
+.header-background {
 	width: 100%;
 	height: 200px;
 	display: -webkit-flex;
   	display: flex;
 }
-.header-main[id=games] {
+.header-background[id=games] {
 	background-color: #8aba56;
 }
 
-.header-main[id=movies] {
+.header-background[id=movies] {
 	background-color: #E15443;
 }
 
-.header-main[id=signup] {
+.header-background[id=signup] {
 	background-color: #009CDC;
 }
 
-.header-title {
+.header-container {
 	margin: auto;
 	width: 990px;
 }
 
-.header-title h1 {
+.header-container h1 {
 	font-size: 90px;
 	font-weight: bold;
 	color: #ffffff;
 }
 
-.header-title p {
+.header-container p {
 	font-size: 16px;
 	color: #ffffff;
 }
@@ -177,17 +153,17 @@ h2 {
 
 .flexbox1 {
 	display: -webkit-flex;
-  display: flex;
+  	display: flex;
 	-webkit-flex: 1;
-          flex: 1;
+  	flex: 1;
 	flex-direction: column;
 }
 
 .flexbox21 {
 	display: -webkit-flex;
-  display: flex;
+  	display: flex;
 	-webkit-flex: 2;
-          flex: 2;
+  	flex: 2;
 	flex-direction: column;
 }
 
@@ -204,8 +180,10 @@ h2 {
 }
 
 .box h2 {
-	margin-left: 16px;
 	font-size: 16px;
+	padding: 5px 0 5px 16px;
+	margin: 10px 0 5px 15px;
+	font-weight: bold;
 }
 
 .box p {
