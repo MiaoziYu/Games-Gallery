@@ -2,7 +2,7 @@
 /*font family*/
 
 html, body, h1, h2, h3, h4, ul, ol, li, p, a {
-	font-family: Georgia,Helvetica,Tahoma,Sans-serif;
+	font-family: Helvetica,Tahoma,Sans-serif;
 }
 
 /*background*/
@@ -39,12 +39,12 @@ body {
 
 /*top navigation*/
 
-.logo, .logo li, .nav-menu li {
+.logo, .nav-menu li {
 	display: inline-block;
 }
 
-.banner, .nav-container, .logo, .logo li, .nav-menu, .nav-menu ul, .nav-menu li {
-	height: 72px;
+.banner, .nav-container, .logo, .nav-menu, .nav-menu ul, .nav-menu li {
+	height: 50px;
 }
 
 .banner {
@@ -52,27 +52,16 @@ body {
 }
 
 .nav-container {
-	max-width: 990px;
+	width: 990px; /*990px/1903px*/
 	margin: 0 auto;
 }
 
 .logo {
-	font-size: 28px;
-}
-
-.logo img {
-	height: 46px;
-	margin: auto 0;
-}
-
-.logo p {
-	display: block;
-	height: 46px;
-	font-weight: bold;
-	font-size: 20px;
-	margin: auto 5px auto 0;
 	color: #ececec;
-	width: 60px;
+	font-family: 'Whitney SSm A';
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 50px;
 }
 
 .nav-menu {
@@ -80,9 +69,10 @@ body {
 }
 
 .nav-menu li {
-	font-size: 16px;
-	padding: 0px 10px;
-	line-height: 72px;
+	height: 50px;
+	font-size: 14px;
+	padding: 0 0 0 10px;
+	line-height: 50px;
 
 }
 
@@ -98,15 +88,36 @@ body {
 	color: #ECECEC;
 }
 
-
 /*main content*/
 
+.container {
+	width: 990px; /*990px/1903px*/
+	margin: 30px auto 0 auto;
+}
+
+.box-inline-block {
+	padding: 1.01010101%;
+  	border: #e5e5e5 solid 0.10101010%;
+	border-radius: 4px;
+	margin: 1.01010101%;
+	background-color: #ffffff;
+	width: 22.6%;
+	height: 22%;
+	display: inline-block;
+}
+
+.box-inline-block img {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+
+}
 
 
-.main-content {
+.container-flex {
 	display: -webkit-flex;
   	display: flex;
-	max-width: 990px;
+	width: 52.023121%; /*990px/1903px*/
 	height: auto;
 	margin: -50px auto 30px auto;
 	font-size: 12px;
@@ -135,7 +146,7 @@ body {
 
 .header-container {
 	margin: auto;
-	width: 990px;
+	width: 52.023121%; /*990px/1903px*/
 }
 
 .header-container h1 {
@@ -167,29 +178,7 @@ body {
 	flex-direction: column;
 }
 
-.box {
-  	border: #e5e5e5 solid 1px;
-	border-radius: 4px;
-	background-color: #ffffff;
-	margin: 5px;
-}
-.box img {
-	display: block;
-	width:  250px;
-	margin: 10px auto 20px auto;
-}
 
-.box h2 {
-	font-size: 16px;
-	padding: 5px 0 5px 16px;
-	margin: 10px 0 5px 15px;
-	font-weight: bold;
-}
-
-.box p {
-	font-size: 14px;
-	margin: 10px 34px 100px 34px;
-}
 
 /*normal box*/
 
@@ -336,3 +325,59 @@ input[id=email] {
 	width: 560px;
 }
 
+/*--------------------------Media Queries--------------------------*/
+
+@media screen and (max-width: 1000px) {
+
+	.container, .nav-container {
+		width: 98%;
+	}
+}
+
+@media screen and (max-width: 891px) {
+
+
+	.box-inline-block {
+		width: 30.56%;
+
+}
+
+@media screen and (max-width: 480px) {
+
+	.box-inline-block {
+		width: 47.3%;
+	}
+
+	.nav-menu {
+		float: none;
+		width: 280px;
+		height: 30px;
+		margin: 0 auto;
+		display: inline-block;
+	}
+
+	.nav-menu li {
+		padding: 0 2px 0 2px;
+		font-size: 10px;
+		height: 30px;
+		line-height: 30px;
+	}
+
+	.banner, .nav-container {
+		height: 100px;
+	}
+
+	.logo {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 345px) {
+	.box-inline-block {
+		width: 98%;
+	}
+
+}
